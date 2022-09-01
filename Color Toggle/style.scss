@@ -1,0 +1,52 @@
+// Set initial background color
+body {
+  background-color: grey;
+}
+
+// Positioning and font-details for main text
+p {
+  line-height: 100px;
+  text-align: center;
+  background-color: transparent;
+  padding: 0px 100px;
+  font-size: 100px;
+}
+
+// Positioning and image of "burger-menu"
+.color-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+  background-image: url("img/menu.png");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+  cursor: pointer;
+
+  &:hover {
+    background-size: 100%;
+  }
+}
+
+// Initial positioning of 'ul' (out of screen)
+.color-list {
+  visibility: hidden;
+  position: fixed;
+  left: -100px;
+  top: 100px;
+  min-width: 100px;
+  background-color: transparent;
+
+  // Positioning and font-details of 'li' items (color buttons)
+  li {
+    line-height: 100px;
+    list-style: none;
+    margin: 5px;
+    padding: 0px 5px;
+    text-align: center;
+    font-size: 24px;
+  }
+}
